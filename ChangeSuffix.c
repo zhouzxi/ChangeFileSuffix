@@ -343,7 +343,7 @@ voidModifyFileName(char* pFilePath, char *pFileName)
 void Check(char *pPath)
 {
     struct _finddata_t hFile; //定义结构体变量
-    long handle;
+    long handle           = 0;
     char szPath[_MAXPATH] = {0};
  
  
