@@ -53,7 +53,7 @@ Config_T g_tConfig;
  ****************************************************************/
 int GetAppConfig(void)
 {
-    char szIniFile[128]   ={0};
+    char szIniFile[128]   = {0};
     char szOldSuffix[256] = {0};
     char szNewSuffix[256] = {0};
  
@@ -194,8 +194,8 @@ void ParseFileSuffix(char*pSzSuffixBuf, int iType)
  ****************************************************************/
 int GetFileExt(char*pFilePath, char *pOutFileExt)
 {
-    char *pDest = NULL;
-    int iResult = 0;
+    char *pDest      = NULL;
+    int iResult      = 0;
     int iFullPathLen = 0;
     int iFileExtLen  = 0;
     char szFullPathName[_MAXPATH] = {0};
@@ -247,15 +247,15 @@ int GetFileExt(char*pFilePath, char *pOutFileExt)
  ****************************************************************/
 voidModifyFileName(char* pFilePath, char *pFileName)
 {
-    HANDLE hFile                = NULL;
+    HANDLE hFile                 = NULL;
     int  iLoopFlag               = 0;
-    int iResult                 = 0;
-    int iNameLen                = 0;
+    int  iResult                 = 0;
+    int  iNameLen                = 0;
     int  iTotalExtType           = 0;
     char szFileTitle[_MAXPATH]   = {0};
     char szFilename[_MAXPATH]    = {0};
     char szNewFilename[_MAXPATH] = {0};
-    char szFileExt[_MAXPATH]    = {0};
+    char szFileExt[_MAXPATH]     = {0};
  
  
     if((NULL == pFilePath) || (NULL == pFileName))
@@ -425,7 +425,7 @@ int main(int argc, char*argv[])
 {
     char szPathName[1000] = {0};
     int  iPathLen = 0;
-    int iRetVal  = 0;
+    int  iRetVal  = 0;
  
  
     printf("starting...\n");
